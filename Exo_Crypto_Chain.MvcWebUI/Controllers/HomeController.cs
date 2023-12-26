@@ -65,7 +65,7 @@ namespace Exo_Crypto_Chain.MvcWebUI.Controllers
         }
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Hakkımızda";
 
             return View();
         }
