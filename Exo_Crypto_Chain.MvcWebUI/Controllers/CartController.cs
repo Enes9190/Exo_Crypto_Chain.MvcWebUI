@@ -58,5 +58,10 @@ namespace Exo_Crypto_Chain.MvcWebUI.Controllers
         return cart;
         }
 
+        public PartialViewResult Summary()
+        {
+
+            return PartialView(GetCart());
+        }
     }
 }

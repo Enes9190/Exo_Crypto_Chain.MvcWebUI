@@ -9,6 +9,9 @@
         <div class="col-md-12">
             <h2>Alışveriş Sepeti</h2>
             <hr />
+
+            @if (Model.CartLines.Count > 0)
+            {
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -38,19 +41,19 @@
                                 @item.Product.Price
                             </td>
                             <td>
-                                @((item.Product.Price*item.Quantity).ToString("c"))
+                                @((item.Product.Price * item.Quantity).ToString("c"))
                             </td>
                             <td>
                                 @using (Html.BeginForm("RemoveFromCart", "Cart"))
-                                 {
-                                    @Html.Hidden("Id",item.Product.Id)
+                                {
+                                    @Html.Hidden("Id", item.Product.Id)
                                 <button type="submit" class="btn btn-danger">
                                     <i class="fa-solid fa-trash"></i>
                                     Kripto Parayı Sil
 
                                 </button>
 
-                                 }
+                                }
                             </td>
                         </tr>
                     }
@@ -66,6 +69,14 @@
                     </tr>
                 </tfoot>
             </table>
+            }
+             else
+            {
+             <div class="alert alert-warning" role="alert" >
+                 Alışveriş sepetinizde kripto para bulunmamaktadır.
+             </div>
+
+            }
         </div>
     </div>
 </div>
