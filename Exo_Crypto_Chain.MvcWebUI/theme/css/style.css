@@ -1,0 +1,49 @@
+#jumbotron
+{
+    
+    background-image: url("../img/eg1.jpg");
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    
+    
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: 400;
+    line-height:1.35em;
+    height:34px;
+}
+
+.card-text{
+    font-size:23px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#product-details h1{
+
+    font-size:20px;
+    font-weight:700;
+
+
+
+}
+
+
+#urunler {
+    margin: 50px;
+    padding-left: 200px;
+}
+
+#write-review{
+    margin-left: -40px;
+}
+
+#product-price{
+    
+    font-size: 27.5px;
+    color: darkgoldenrod;
+}

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Exo_Crypto_Chain.MvcWebUI.Entity.Category>
+
+
+<ul class="list-group">
+    
+    <li class="list-group-item" >
+        <a href="/Home/List">
+            <i class="fa-solid fa-angles-right"></i>
+            Tüm Kripto Paralar
+        </a>
+    </li>
+
+    @foreach (var item in Model)
+    {
+
+        <li class="list-group-item" aria-current="true">
+            <a href="/Home/List/@item.Id">
+                <i class="fa-solid fa-angles-right"></i>
+                @item.Name
+            </a>
+        </li>
+
+
+    }
+</ul>
